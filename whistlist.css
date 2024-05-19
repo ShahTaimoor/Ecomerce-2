@@ -1,0 +1,58 @@
+.img-zoom{
+    cursor: crosshair;
+    position: relative;
+}
+.img-zoom:hover img{
+    animation: zoom 1s linear forwards;
+}
+.img-zoom:hover div{
+    animation: slide 0.3s linear forwards;
+}
+#cart-overlay{
+    z-index: 1;
+}
+
+@keyframes zoom {
+    from{transform: scale(1);}
+    to{transform: scale(2);}
+}
+
+@keyframes slide {
+    from {
+        right: -40px;
+    }
+
+    to {
+        right: 5px;
+    }
+}
+
+@keyframes cartlist {
+    from {
+        right: -400px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes close {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: -400px;
+    }
+}
+
+@keyframes dropdown {
+    to {
+        top:40px;
+    }
+
+    from {
+        top: 30px;
+    }
+}
